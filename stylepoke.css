@@ -1,0 +1,91 @@
+
+body {
+    background-color: #f2f2f2; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #e0415d; 
+    text-align: center;
+    text-transform: uppercase; 
+
+}
+#damageCalculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #e0415d; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d01c3f; 
+
+}
+h2 {
+    font-size: 24px;
+    color: #e0415d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resultado {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+
+#pokeball-container {
+    text-align: center;
+}
+
+/* Estilo para la imagen de la Poké Ball */
+#pokeball {
+    width: 100px; /* Ajusta el tamaño según tus preferencias */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    transition: transform 0.5s ease; /* Agrega una transición suave para la rotación */
+}
+
+/* Estilo para la rotación de la Poké Ball cuando se hace clic */
+#pokeball.rotate {
+    transform: rotate(360deg); /* Rota 360 grados */
+}

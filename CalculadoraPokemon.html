@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Daño</title>
+    <link rel="stylesheet" href="stylepoke.css">
+</head>
+<body>
+    <div id="pokeball-container">
+        <img id="pokeball" src="img/pokeball.png" alt="Poke Ball">
+    </div>
+
+    <h1>Calculadora de Daño</h1>
+    <form id="damageCalculator">
+        <label for="type1">Tipo 1:</label>
+        <select id="type1" required>
+            <option value="electricidad">Electricidad</option>
+            <option value="agua">Agua</option>
+            <option value="fuego">Fuego</option>
+            <option value="hierba">Hierba</option>
+        </select>
+
+        <label for="type2">Tipo 2:</label>
+        <select id="type2" required>
+            <option value="electricidad">Electricidad</option>
+            <option value="agua">Agua</option>
+            <option value="fuego">Fuego</option>
+            <option value="hierba">Hierba</option>
+        </select>
+
+        <label for="attack">Ataque:</label>
+        <input type="number" id="attack" required>
+
+        <label for="defense">Defensa:</label>
+        <input type="number" id="defense" required>
+
+        <button type="button" onclick="calculardaño()">Calcular Daño</button>
+    </form>
+
+    <h2>Resultado</h2>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
