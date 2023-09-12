@@ -154,7 +154,7 @@ window.onload = function () {
 }
 
 function mifoto(num) {
-    f = "/img/Foto" + num + ".jpg"; // Corrige la ruta de la imagen
+    f = "img/Foto" + num + ".jpg"; // Corrige la ruta de la imagen
     document.images["fotovisor"].src = f;
     t = document.images["fotos" + num].alt;
     mititulo.textContent = t; // Cambia innerHTML a textContent
